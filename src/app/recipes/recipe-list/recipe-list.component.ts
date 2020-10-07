@@ -11,9 +11,14 @@ export class RecipeListComponent implements OnInit {
   recipes: Recipe[] = [
     new Recipe(
       'A Test Recipe',
-      'This is symply a test',
-      'https://media.self.com/photos/57dff8aa7160f6ee33314fdf/4:3/w_768,c_limit/sub-channel-food_recipes.jpg'
-    ) 
+      'This is simply a test',
+      'https://ichef.bbci.co.uk/food/ic/food_16x9_832/recipes/nachos_92445_16x9.jpg'
+    ),
+    new Recipe(
+      'A Test Recipe',
+      'This is simply a test',
+      'https://www.cookingclassy.com/wp-content/uploads/2019/09/meatballs-21.jpg'
+    )
   ];
 
   constructor() { }

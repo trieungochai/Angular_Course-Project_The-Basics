@@ -1,4 +1,5 @@
 import { EventEmitter } from '@angular/core';
+import { Ingredient } from '../shared/ingredient.model';
 
 import { Recipe } from './recipe.model';
 
@@ -7,14 +8,33 @@ export class RecipeService {
 
   private recipes: Recipe[] = [
     new Recipe(
-      'A Test Recipe',
-      'This is simply a test',
-      'https://ichef.bbci.co.uk/food/ic/food_16x9_832/recipes/nachos_92445_16x9.jpg'
+      'Classic Lasagna',
+      'Everyone needs a go-to lasagna recipe.',
+      'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-classic-lasagna-vertical-1536611743.jpg',
+      [
+        new Ingredient('Onion', 1),
+        new Ingredient('Tomatoes', 2)
+      ]
     ),
     new Recipe(
-      'A Test Recipe',
-      'This is simply a test',
-      'https://realfood.tesco.com/media/images/Ritas-enchiladas-recipe-1400x919-1c7ff22b-ea5e-44cf-9ada-d7b04420002f-0-1400x919.jpg'
+      'Apple Cider Glazed Chicken',
+      'Best eaten after visiting a pumpkin patch.',
+      'https://hips.hearstapps.com/del.h-cdn.co/assets/17/41/1507738986-delish-apple-cider-glazed-chicken-pinterest-still003.jpg',
+      [
+        new Ingredient('Sweet potato', 1),
+        new Ingredient('Apple', 2),
+        new Ingredient('Rosemary sprig', 3)
+      ]
+    ),
+    new Recipe(
+      'Garlic Rosemary Pork Chops',
+      'Not the dry, overcooked chops you were served as a kid.',
+      'https://hips.hearstapps.com/del.h-cdn.co/assets/18/11/1520972863-pork-chop-vertical.jpg',
+      [
+        new Ingredient('Pork chops', 4),
+        new Ingredient('Garlic', 2),
+        new Ingredient('Butter', 0.5)
+      ]
     )
   ];
 
